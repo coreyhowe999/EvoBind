@@ -1,7 +1,7 @@
 
 #############PARAMETERS#############
 BASE=. #Change this depending on your local path
-DATADIR=$BASE/data/ #The output (designs) will also be written here
+DATADIR=$BASE/ #The output (designs) will also be written here
 RECEPTORID='cd20'
 ###Receptor interface residues - provide with --receptor_if_residues=$RECEPTORIFRES if using
 RECEPTORIFRES="117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137"
@@ -33,7 +33,7 @@ MODEL_NAME='model_1' #model_1_ptm
 MSAS="$MSA" #Comma separated list of msa paths
 
 #Optimise a binder
-#conda activate evobind
+conda activate evobind
 python3 $BASE/src/mc_design.py \
 --receptor_fasta_path=$RECEPTORFASTA \
 --peptide_length=$PEPTIDELENGTH \
