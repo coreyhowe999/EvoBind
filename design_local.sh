@@ -1,14 +1,14 @@
 
 #############PARAMETERS#############
 BASE=. #Change this depending on your local path
-DATADIR=$BASE/data/test #The output (designs) will also be written here
-RECEPTORID=1ssc_receptor
+DATADIR=$BASE/data/ #The output (designs) will also be written here
+RECEPTORID='cd20'
 ###Receptor interface residues - provide with --receptor_if_residues=$RECEPTORIFRES if using
-RECEPTORIFRES="4,5,8,11,12,45,47,54,55,57,58,59,65,66,72,74,81,83,102,104,105,106,107,108,109,110,111,112"
+RECEPTORIFRES="117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137"
 ####Receptor fasta sequence####
 RECEPTORFASTA=$DATADIR/$RECEPTORID'.fasta'
 ###Peptide length###
-PEPTIDELENGTH=10
+PEPTIDELENGTH=20
 #NUMBER OF ITERATIONS
 NITER=1000 #This will likely have to be modified depending on the outcome of the design
 
