@@ -16,14 +16,14 @@ pip install --upgrade "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-re
 conda deactivate
 
 ## HHblits (requires cmake)
-git clone https://github.com/soedinglab/hh-suite.git
-mkdir -p hh-suite/build && cd hh-suite/build
-cmake -DCMAKE_INSTALL_PREFIX=. ..
-make -j 4 && make install
-cd ../..
+#git clone https://github.com/soedinglab/hh-suite.git
+#mkdir -p hh-suite/build && cd hh-suite/build
+#cmake -DCMAKE_INSTALL_PREFIX=. ..
+#make -j 4 && make install
+#cd ../..
 
-cd data
+#cd data
 ### Download uniclust30_2018_08
-wget http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/uniclust30_2018_08_hhsuite.tar.gz --no-check-certificate
-tar -zxvf uniclust30_2018_08_hhsuite.tar.gz
-rm uniclust30_2018_08_hhsuite.tar.gz
+#wget http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/uniclust30_2018_08_hhsuite.tar.gz --no-check-certificate
+#tar -zxvf uniclust30_2018_08_hhsuite.tar.gz
+#rm uniclust30_2018_08_hhsuite.tar.gz
