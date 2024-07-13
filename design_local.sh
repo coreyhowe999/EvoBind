@@ -37,6 +37,7 @@ conda activate evobind
 python3 $BASE/src/mc_design.py \
 --receptor_fasta_path=$RECEPTORFASTA \
 --peptide_length=$PEPTIDELENGTH \
+--receptor_if_residues=$RECEPTORIFRES \
 --msas=$MSAS \
 --output_dir=$DATADIR/ \
 --model_names=$MODEL_NAME \
