@@ -409,6 +409,7 @@ def optimise_binder(
 
     #Check if the loss improved
     loss = if_dist_peptide*1/plddt
+    print('best:',min(sequence_scores['loss']),'candidate:',loss)
     if loss<min(sequence_scores['loss']):
         #Create new best seq
         peptide_sequence = new_sequence
