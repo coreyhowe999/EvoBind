@@ -11,6 +11,8 @@ RECEPTORFASTA=$DATADIR/$RECEPTORID'.fasta'
 PEPTIDELENGTH=20
 #NUMBER OF ITERATIONS
 NITER=1000 #This will likely have to be modified depending on the outcome of the design
+###Peptide Sequence###
+PEPTIDE_SEQ='VLAYNKQMRMEARRRDAQEA'
 
 #########Step1: Create MSA with HHblits#########
 HHBLITSDB=$BASE/data/uniclust30_2018_08/uniclust30_2018_08
@@ -37,6 +39,7 @@ conda activate evobind
 python3 $BASE/src/mc_design.py \
 --receptor_fasta_path=$RECEPTORFASTA \
 --peptide_length=$PEPTIDELENGTH \
+--peptide_sequence=$PEPTIDE_SEQ
 --receptor_if_residues=$RECEPTORIFRES \
 --msas=$MSAS \
 --output_dir=$DATADIR/ \
