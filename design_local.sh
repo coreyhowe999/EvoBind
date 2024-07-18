@@ -10,9 +10,9 @@ RECEPTORFASTA=$DATADIR/$RECEPTORID'.fasta'
 ###Peptide length###
 PEPTIDELENGTH=20
 #NUMBER OF ITERATIONS
-NITER=1000 #This will likely have to be modified depending on the outcome of the design
+NITER=10000 #This will likely have to be modified depending on the outcome of the design
 ###Peptide Sequence###
-PEPTIDE_SEQ='VLAYNKQMRMEARRRDAQEA'
+PEPTIDE_SEQ=''
 
 #########Step1: Create MSA with HHblits#########
 HHBLITSDB=$BASE/data/uniclust30_2018_08/uniclust30_2018_08
